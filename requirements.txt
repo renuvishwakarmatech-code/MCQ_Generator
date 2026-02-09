@@ -1,6 +1,7 @@
-groq
-langchain
+langchain-groq
+langchain-core
 streamlit
 python-dotenv
+pandas
+traceback
 PyPDF2
-langchain-groq
