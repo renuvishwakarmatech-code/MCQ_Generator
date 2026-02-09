@@ -31,11 +31,11 @@ JSON FORMAT:
 
 quiz_prompt = ChatPromptTemplate.from_template(TEMPLATE)
 
-llm = ChatGroq(model="qwen/qwen3-32b", temperature=0, 
+llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0, 
         model_kwargs={
         "response_format": {"type": "json_object"}
     })
 
-quiz_chain = quiz_prompt | llm | JsonOutputParser()
+generate_evaluate_chain = quiz_prompt | llm | JsonOutputParser()
 
 
